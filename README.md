@@ -1,7 +1,17 @@
 # stock_price_prediction
 Implementing a LSTM.nn to predict the future prices of an equity
 
-![alt_text](Readme-title.png "Title")
+![front_image](/images/front_image_readme_file.png "Title")
+
+## Libraries Used
+## The motivation for the project
+## Files in the repository with a small description
+## A summary of the results of the analysis
+## Necessary acknowledgment
+
+
+
+
 
 # airbnb_london_data_blog
 
