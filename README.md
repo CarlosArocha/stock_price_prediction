@@ -67,6 +67,15 @@ The project here is divided in five big sections:
 6. Other unsuccsesful trials performed.
 
 
+## ABOUT THE METRICS INVOLVED
+
+My initial approach was to predict the line of prices of a certain stock, in this case Apple Inc. The best netric to achieve a better model was the Mean Square Error (MSE), to measure how the new predicted price line differs or is separated from the original price line.
+
+But when I realize that the model will not work as expected, and I change the approach to measure the MSE on the returns of that price line per every step to improve the model; the results, with some overfitting and bad testing errors, push me to find a metric that finds inside the results a signal that our model is learning, a little peace of information that show me that somehow I am in the right direction, and that metric was the Accuracy of the positive or negative momentums, or the accuracy of the signal of the momentum and not its magnitude.
+
+In the stock market you can bet to win for positive returns and for negative returns as well. In this case, the returns data is very symmetric, meaning  have a symmetric distribution of true positives and true negatives, and also for false positive and false negatives. So, Accuracy will be enough to measure how truly are our momentum predictor.
+
+
 ## A BRIEF SUMMARY IN IMAGES:
 
 Some images can help me to show you the process and the results achieved:
@@ -113,6 +122,19 @@ Some images can help me to show you the process and the results achieved:
 ![front_image](/Images/Accuracy_stationary_only_regular_hours.jpg)
 
 
+## ABOUT THE METRICS INVOLVED
+
+
+The cases performed show different results that graphically don't allow me to conclude about the eficiency of the LSTM model I'm trying to implement. 
+
+With those results, the forecast lines show erratic charts compared to the original price line.
+
+That reason pushed me to look for a signal inside any of the results that would allow me to think that the model is learning; a piece of information that shows me that I am somehow heading in the right direction. 
+
+That metric is the accuracy of the positive or negative pulses, or the accuracy of the momentum's signal without its magnitude.
+
+In the stock market you can bet to win with positive returns and also with negative returns. In this case, the data is highly symmetric, meaning that it has a symmetric distribution of true positives and true negatives, and also of false positives and false negatives. Therefore, accuracy will be enough to measure how real our new momentum's predictor is; it will check how accurate the model was in predicting true positive or true negative momentums for the next minute or step.
+
 
 ## DELIVERING RESULTS AND THOUGHTS - _Deployment_
 
@@ -122,7 +144,15 @@ Finally, after all this process, you can find my deeper thoughts for this projec
 
 Enjoy!
 
+## LICENSING, AUTHORS, ACKNOWLEDGEMENTS
 
+Thanks to ALpha Vantage for permititing us collect the price data ([licensed](https://www.alphavantage.co/terms_of_service/))
 
+Thanks [Udacity](https://www.udacity.com) for the opportunity and such a great course.
 
+And thanks to many other reasearchers and websites for sharing their knowledge:
+  * [www.investopedia.com](https://www.investopedia.com)
+  * [www.machinelearningmastery.com](https://machinelearningmastery.com)
+  * [www.quantstart.com](https://www.quantstart.com)
+  * among others
 
